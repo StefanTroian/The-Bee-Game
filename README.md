@@ -4,7 +4,8 @@ To run the project:
 - tsc in terminal
 - open html / go live in vs code
 
-#Game play
+# Game play
+
 The game has 3 types of bees: Queen (100HP), Worker (75HP), Drone (50HP).
 The UI has 3 pages: 
 - Landing page: Name input + Start button
