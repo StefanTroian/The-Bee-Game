@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/css/landing-page.css">
+    <link rel="stylesheet" href="./src/css/game-page.css">
+    <link rel="stylesheet" href="./src/css/game-over-page.css">
+</head>
+<body>
+
+<!-- Landing Page -->
+<div id="landing-page" class="page">
+    <h1>Welcome to the Bee Game</h1>
+    <input type="text" id="player-name" placeholder="Enter your name">
+    <button id="start-button">Start Game</button>
+</div>
+
+<!-- Game Page -->
+<div id="game-page" class="page hidden">
+    <h2 id="greeting" class="name-display"></h2>
+    <button id="attack-button">Attack Random Bee</button>
+    <div id="bee-container" class="bee-container"></div>
+    <div class="legend">
+        <div class="legend-item">
+            <img src="./src/assets/bees/queen.png" alt="Queen Bee" class="legend-bee-icon">
+            <p>Queen Bees: <span id="queen-count">1</span></p>
+        </div>
+        <div class="legend-item">
+            <img src="./src/assets/bees/worker.png" alt="Worker Bee" class="legend-bee-icon">
+            <p>Worker Bees: <span id="worker-count">5</span></p>
+        </div>
+        <div class="legend-item">
+            <img src="./src/assets/bees/drone.png" alt="Drone Bee" class="legend-bee-icon">
+            <p>Drone Bees: <span id="drone-count">8</span></p>
+        </div>
+        <div class="swarm-health">
+            <p>Swarm Health</p>
+            <div id="health-bar-container">
+                <div id="health-bar"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Game Over Page -->
+<div id="game-over-page" class="page hidden">
+    <h1>Game Over</h1>
+    <p id="final-score"></p>
+    <button id="restart-button">Restart</button>
+    <button id="exit-button">Exit</button>
+</div>
+
+<script type="module" src="./dist/main.js"></script>
+</body>
+</html>
